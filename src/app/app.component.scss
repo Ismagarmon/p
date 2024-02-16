@@ -1,0 +1,18 @@
+// Patron de colores
+$colorprincipal: red;
+$colorsecundario: blue;
+$colorterciario: green;
+
+
+$font-family-base: Arial, sans-serif; // Cambiar la fuente base a Arial
+
+
+$icons: ("eye": $colorprincipal, "start": $colorsecundario, "stop": $colorterciario);
+
+@each $name, $variable in $icons {
+  .iconour-#{$name} {
+    display: inline-block;
+    font-family: $font-family-base;
+    background-color: $variable;
+  }
+}

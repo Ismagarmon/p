@@ -1,0 +1,70 @@
+<mat-tab-group dynamicHeight>
+    <mat-tab label="Small Div">
+      <div class="example-small-box mat-elevation-z4">
+        Contenido Pequeño como tu tula cabrón
+      </div>
+    </mat-tab>
+    <mat-tab label="Buttons">
+      <section>
+        <div class="example-label">Raised</div>
+        <div class="example-button-row">
+          <button mat-raised-button>Basic</button>
+          <button mat-raised-button color="primary">Primary</button>
+          <button mat-raised-button color="accent">Accent</button>
+          <button mat-raised-button color="warn">Warn</button>
+          <button mat-raised-button disabled>Disabled</button>
+          <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
+        </div>
+      </section>
+    </mat-tab>
+    <mat-tab label="Swith theme">
+      <button mat-raised-button color="primary" (click)="changetheme()">Light/Dark Mode</button>
+    </mat-tab>
+    <mat-tab label="Cards">
+
+      <mat-card class="example-card" [ngClass]="'correction'">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Shiba Inu</mat-card-title>
+          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image sizes="(max-width: 1400px) 100vw, 1400px" srcset="
+            assets/dog/dog_c_scale,w_200.jpg 200w,
+            assets/dog/dog_c_scale,w_591.jpg 591w,
+            assets/dog/dog_c_scale,w_854.jpg 854w,
+            assets/dog/dog_c_scale,w_1089.jpg 1089w,
+            assets/dog/dog_c_scale,w_1258.jpg 1258w,
+            assets/dog/dog_c_scale,w_1354.jpg 1354w,
+            assets/dog/dog_c_scale,w_1400.jpg 1400w" src="dog_c_scale,w_1400.jpg" alt="">
+        <mat-card-content>
+          <p>
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+            bred for hunting.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+          <button mat-button>DROP</button>
+        </mat-card-actions>
+      </mat-card>
+
+    </mat-tab>
+
+    <mat-tab label="Bootstrap Form and Buttons">
+      
+
+    </mat-tab>
+    
+
+    <mat-tab label="Bootstrap Form and Buttons">
+      
+
+    </mat-tab>
+
+    <mat-tab label="Bootstrap Form and Buttons">
+      
+
+    </mat-tab>
+  </mat-tab-group>
