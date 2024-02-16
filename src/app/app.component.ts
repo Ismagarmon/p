@@ -12,6 +12,6 @@ export class AppComponent {
   title = 'ISMAELPELELEGOD';
 
   constructor() {
-    document.body.classList.add('light-them')
+    document.body.classList.add('light-theme')
   }
 }

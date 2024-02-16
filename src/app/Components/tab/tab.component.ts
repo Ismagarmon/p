@@ -5,6 +5,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import { DialogComponent } from '../dialog/dialog.component';
 export interface ExampleTab {
   label: string
 }
@@ -12,7 +13,7 @@ export interface ExampleTab {
 @Component({
   selector: 'app-tab',
   standalone: true,
-  imports: [MatTabsModule, CommonModule, MatButtonModule, MatDividerModule, MatIconModule,MatCardModule],
+  imports: [MatTabsModule, CommonModule, MatButtonModule, MatDividerModule, MatIconModule,MatCardModule,DialogComponent],
   templateUrl: './tab.component.html',
   styleUrl: './tab.component.scss'
 })
